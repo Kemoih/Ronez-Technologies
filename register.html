@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #ff6347;
+  box-shadow: 0 0 8px rgba(255, 99, 71, 0.3);
+  outline: none;
+}
+
+button {
+  background: linear-gradient(135deg, #ff6347, #ff4500);
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form class="registration-form" action="#" method="post" aria-label="Registration Form" onsubmit="redirectToLogin(event)">
+            <label for="first-name"><strong>First Name</strong></label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required aria-label="First Name"><br><br>
+
+            <label for="last-name"><strong>Last Name</strong></label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required aria-label="Last Name"><br><br>
+
+            <label for="email"><strong>Email Address</strong></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-label="Email Address"><br><br>
+
+            <label for="password"><strong>Password</strong></label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required aria-label="Password"><br><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <!-- Link the JavaScript file -->
+    <script>
+        function redirectToLogin(event) {
+  event.preventDefault(); // Prevent the form from submitting the traditional way
+
+  // Simulate a successful registration
+  alert("Registration successful! Redirecting to login page...");
+
+  // Redirect to the login page
+  window.location.href = "login.html";
+}
+    </script>
+</body>
+</html>

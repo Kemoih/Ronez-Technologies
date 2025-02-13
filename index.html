@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Assets/style.css">
+  <title>Practice Template</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html"><img src="/Assets/images/Logo.png" alt=""></a>
+      </div>
+      <div class="navlinks">
+        <!-- Dropdown toggle button for mobile -->
+      <button class="dropdown-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <!-- Navigation menu -->
+        <nav>
+          <ul>
+            <li><a href="index.html" target="_parent">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Programs">Programs</a></li>
+            <li><a href="#contact-us">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="btn">
+        
+        <button><a href="login.html">Login</a></button>
+        <button><a href="register.html">Register</a></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>Welcome to Ronez Technologies</h1>
+          <p>
+            Welcome to Ronez Technologies, a place where we inspire and nurture the growth 
+            of young minds. Our mission is to provide a comprehensive education that empowers 
+            students to become leaders and innovators of tomorrow. With a dedicated team of 
+            teachers, state-of-the-art facilities, and a commitment to academic excellence, 
+            we are shaping the future, one student at a time.
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="/Assets/images/Image1.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-us-container">
+        <div class="span6">
+          <div class="about-us-text">
+            <h1>About us</h1> <br>
+            <p>
+              Ronez Technologies is a leading educational institution that offers a wide range of <br>
+              academic programs to students of all ages. Our mission is to provide a comprehensive <br>
+              education that empowers students to become leaders and innovators of tomorrow. <br>
+              With a dedicated team of teachers, state-of-the-art facilities, and a commitment to <br>
+              academic excellence, we are shaping the future, one student at a time. <br>
+              Our school offers a balanced curriculum that emphasizes both STEM (Science, Technology, <br>
+              Engineering, and Mathematics)and the arts, ensuring that our students are well-rounded and <br>
+              equipped to succeed in an ever-changing world.
+            </p>
+          </div>
+          <form action="" class="form">
+            <input type="text" placeholder="Search for courses..." id="searchTerm" name="searchTerm" class="search">
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+        </div>
+        <div id="Programs" class="programs-container">
+          <h1>Academic Programs</h1>
+          <p>
+            At Ronez Technologies, we offer a wide range of academic programs that cater to the needs of every student.
+            Our curriculum is designed to challenge and engage students while encouraging a love of learning.
+          </p>
+          <a href="programs.html">Read More</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact-us">
+      <div class="contact-us-container">
+        <h1>Get in Touch</h1>
+        <p>Have a question or want to learn more about Ronez Technologies? We'd love to hear from you!</p>
+        <form action="">
+          <label for="Fullnames" class="form-label">Fullnames</label>
+          <input type="text" class="form-control" id="Fullnames" name="Fullnames" placeholder="Fullnames" required>
+          <br><br>
+
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Email" required> <br><br>
+
+          <label for="description" class="form-label">Description</label>
+          <textarea class="form-control" id="description" name="description" placeholder="Description"
+            required></textarea> <br>
+
+          <!-- WhatsApp Button -->
+          <a id="whatsapp-link" target="_blank">
+            <button type="button">Send Your Message</button>
+          </a>
+        </form>
+      </div>
+      <div class="additional-info">
+        <h2>Visit Us</h2>
+        <p>📍Ngumba Lane, Garden City</p>
+        <p>📞 <a href="tel:0798594411">0798 594 411</a></p>
+        <p>📧 <a href="mailto:kemoih01@gmail.com
+          ">kemoih01@gmail.com
+          </a></p>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808567475389!2d36.82115931475395!3d-1.292599835979919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d4f2e8a3a7%3A0x1b9e1b9e1b9e1b9e!2sNairobi%20City%20Centre!5e0!3m2!1sen!2ske!4v1633021234567!5m2!1sen!2ske"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <p>&copy; 2025 Ezra Kipkemoi. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </main>
+  <!-- Link the JavaScript file -->
+  <script src="/Assets/script.js"></script>
+
+</body>
+
+</html>
